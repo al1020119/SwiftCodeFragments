@@ -9,10 +9,6 @@ target 'SwiftCodeFragments' do
 
  # 网络请求
  pod 'Alamofire', '~> 4.3.0'
- # 导航栏 （隐藏、展示导航栏直接相互切换不错）
- pod 'KDInteractiveNavigationController', '~> 0.2'
- # 下拉刷新、上提刷新
- pod 'MRPullToRefreshLoadMore', '~> 0.0.2'
- 
+
  
 end

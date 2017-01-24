@@ -1,6 +1,0 @@
-framework module MRPullToRefreshLoadMore {
-  umbrella header "MRPullToRefreshLoadMore-umbrella.h"
-
-  export *
-  module * { export * }
-}

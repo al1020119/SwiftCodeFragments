@@ -1,6 +1,0 @@
-framework module KDInteractiveNavigationController {
-  umbrella header "KDInteractiveNavigationController-umbrella.h"
-
-  export *
-  module * { export * }
-}

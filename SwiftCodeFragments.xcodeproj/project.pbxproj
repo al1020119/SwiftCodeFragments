@@ -13,6 +13,10 @@
 		BD4504B91E372C760066FCF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4504B71E372C760066FCF0 /* Main.storyboard */; };
 		BD4504BB1E372C760066FCF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4504BA1E372C760066FCF0 /* Assets.xcassets */; };
 		BD4504BE1E372C760066FCF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4504BC1E372C760066FCF0 /* LaunchScreen.storyboard */; };
+		BD4504C91E374AFA0066FCF0 /* KDInteractiveNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4504C71E374AFA0066FCF0 /* KDInteractiveNavigationController.swift */; };
+		BD4504CA1E374AFA0066FCF0 /* UIViewController+InteractiveNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4504C81E374AFA0066FCF0 /* UIViewController+InteractiveNavigation.swift */; };
+		BD4504CE1E374B730066FCF0 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4504CC1E374B730066FCF0 /* IndicatorView.swift */; };
+		BD4504CF1E374B730066FCF0 /* MRPullToRefreshLoadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4504CD1E374B730066FCF0 /* MRPullToRefreshLoadMore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		BD4504BA1E372C760066FCF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD4504BD1E372C760066FCF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD4504BF1E372C760066FCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD4504C71E374AFA0066FCF0 /* KDInteractiveNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDInteractiveNavigationController.swift; sourceTree = "<group>"; };
+		BD4504C81E374AFA0066FCF0 /* UIViewController+InteractiveNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+InteractiveNavigation.swift"; sourceTree = "<group>"; };
+		BD4504CC1E374B730066FCF0 /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		BD4504CD1E374B730066FCF0 /* MRPullToRefreshLoadMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRPullToRefreshLoadMore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +92,36 @@
 				BD4504BA1E372C760066FCF0 /* Assets.xcassets */,
 				BD4504BC1E372C760066FCF0 /* LaunchScreen.storyboard */,
 				BD4504BF1E372C760066FCF0 /* Info.plist */,
+				BD4504C51E374AFA0066FCF0 /* Frameworks */,
 			);
 			path = SwiftCodeFragments;
+			sourceTree = "<group>";
+		};
+		BD4504C51E374AFA0066FCF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD4504CB1E374B730066FCF0 /* MRPullToRefreshLoadMore */,
+				BD4504C61E374AFA0066FCF0 /* KDInteractiveNavigationController */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD4504C61E374AFA0066FCF0 /* KDInteractiveNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				BD4504C71E374AFA0066FCF0 /* KDInteractiveNavigationController.swift */,
+				BD4504C81E374AFA0066FCF0 /* UIViewController+InteractiveNavigation.swift */,
+			);
+			path = KDInteractiveNavigationController;
+			sourceTree = "<group>";
+		};
+		BD4504CB1E374B730066FCF0 /* MRPullToRefreshLoadMore */ = {
+			isa = PBXGroup;
+			children = (
+				BD4504CC1E374B730066FCF0 /* IndicatorView.swift */,
+				BD4504CD1E374B730066FCF0 /* MRPullToRefreshLoadMore.swift */,
+			);
+			path = MRPullToRefreshLoadMore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD4504C91E374AFA0066FCF0 /* KDInteractiveNavigationController.swift in Sources */,
+				BD4504CA1E374AFA0066FCF0 /* UIViewController+InteractiveNavigation.swift in Sources */,
 				BD4504B61E372C760066FCF0 /* ViewController.swift in Sources */,
+				BD4504CF1E374B730066FCF0 /* MRPullToRefreshLoadMore.swift in Sources */,
 				BD4504B41E372C760066FCF0 /* AppDelegate.swift in Sources */,
+				BD4504CE1E374B730066FCF0 /* IndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

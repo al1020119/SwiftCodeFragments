@@ -9,28 +9,28 @@
 import UIKit
 
 @IBDesignable
-open class KDInteractiveNavigationController: UINavigationController {
+public class KDInteractiveNavigationController: UINavigationController {
     
-    @IBInspectable open var clearBackTitle: Bool = false
+    @IBInspectable public var clearBackTitle: Bool = false
     
-    override open func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         self.interactivePopGestureRecognizer?.delegate = self
     }
     
-    override open func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    override open func pushViewController(_ viewController: UIViewController, animated: Bool) {
+    override public func pushViewController(_ viewController: UIViewController, animated: Bool) {
         controlClearBackTitle()
         super.pushViewController(viewController, animated: animated)
     }
     
-    override open func show(_ vc: UIViewController, sender: Any?) {
+    public override func show(_ vc: UIViewController, sender: Any?) {
         controlClearBackTitle()
         super.show(vc, sender: sender)
     }
