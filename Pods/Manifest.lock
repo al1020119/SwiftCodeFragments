@@ -1,12 +1,18 @@
 PODS:
   - Alamofire (4.3.0)
+  - KDInteractiveNavigationController (0.2)
+  - MRPullToRefreshLoadMore (0.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3.0)
+  - KDInteractiveNavigationController (~> 0.2)
+  - MRPullToRefreshLoadMore (~> 0.0.2)
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  KDInteractiveNavigationController: 00c918c2cd235b156bb90f6ec245941eddd169f9
+  MRPullToRefreshLoadMore: d05e24e7561b43575843005ef800e84d97dce04c
 
-PODFILE CHECKSUM: afd32e66bac09ae0f4f81bc6abd27d1195cb9046
+PODFILE CHECKSUM: 0c6b505a6ff33ed2ea46e845b102d9affa771392
 
 COCOAPODS: 1.1.1
