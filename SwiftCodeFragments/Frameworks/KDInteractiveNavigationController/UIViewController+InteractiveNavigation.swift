@@ -37,8 +37,8 @@ extension UIViewController {
     
     private static func replaceInteractiveMethods() {
         method_exchangeImplementations(
-            class_getInstanceMethod(self, "viewWillAppear:"),
-            class_getInstanceMethod(self, "KD_interactiveViewWillAppear:"))
+            class_getInstanceMethod(self, #selector(UIViewController.viewWillAppear(_:))),
+            class_getInstanceMethod(self, #selector(UIViewController.KD_interactiveViewWillAppear(animated:))))
     }
     
     func KD_interactiveViewWillAppear(animated: Bool) {
