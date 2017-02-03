@@ -9,21 +9,16 @@
 import UIKit
 import Alamofire
 
+// 文字列表的url
+let kContentUrl     =   "joke/content/text.from"
+
 class JokeRequestManager: BaseRequestManager {
 
-    class func contentRequestAction(parameters:NSDictionary, completion:@escaping (_ isSuccessed:Bool,_ code:Int?,_ jsonValue:AnyObject?) -> ()) {
-        // 根据参数拼接成url
-        var page : Int = 1
-        if let aPage = parameters["page"] {
-            page = aPage as! Int
-        }
-        var pageSize : Int = 20
-        if let aPageSize = parameters["pageSize"] {
-            pageSize = aPageSize as! Int
-        }
-        let lastString = String.init(format: "https://japi.juhe.cn/joke/content/text.from?page=%d&pagesize=%d&key=%@", page,pageSize,"b13defd332c76c3abf2895f7796e2a45")
-        BaseRequestManager.baseRequestAction(urlString:lastString, method: HTTPMethod.get, parameters: parameters, completion: completion)
-        
+    class func contentRequestAction(page: Int, completion:@escaping(_ isSuccessed:Bool,_ code:Int?,_ jsonValue:AnyObject?) -> ()) {
+        // url
+        let urlString = String.init(format: "%@%@", kBase_url,kContentUrl)
+        // 参数
+        let parameters = ["page" : page, "pageSize" : 20, "key" : kRequest_key] as [String : Any]
+        BaseRequestManager.baseRequestAction(urlString:urlString, method: HTTPMethod.get, parameters: parameters, completion: completion)
     }
-
 }

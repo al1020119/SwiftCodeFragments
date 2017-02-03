@@ -16,20 +16,19 @@ class FirstViewController: BaseViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // 请求文字内容
+        self.reqestContent()
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func reqestContent() -> Void {
+        JokeRequestManager.contentRequestAction(page: 1) { (isSuccessed, code, result) in
+            if isSuccessed {
+                if let result = result {
+                    print("结果===",result)
+                }
+            }
+        }
     }
-    */
-
 }

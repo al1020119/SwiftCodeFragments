@@ -34,6 +34,7 @@
 		BD4505001E37535F0066FCF0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4504FF1E37535F0066FCF0 /* SecondViewController.swift */; };
 		BD4505021E37536C0066FCF0 /* ThridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4505011E37536C0066FCF0 /* ThridViewController.swift */; };
 		BD4505041E3753770066FCF0 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4505031E3753770066FCF0 /* MoreViewController.swift */; };
+		BDC4834A1E44135A009D4F63 /* ApiMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC483491E44135A009D4F63 /* ApiMacros.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		BD4504FF1E37535F0066FCF0 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		BD4505011E37536C0066FCF0 /* ThridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThridViewController.swift; sourceTree = "<group>"; };
 		BD4505031E3753770066FCF0 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		BDC483491E44135A009D4F63 /* ApiMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiMacros.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				BD4504DA1E3750DF0066FCF0 /* PathMacros.swift */,
 				BD4504DB1E3750DF0066FCF0 /* SizeMacros.swift */,
 				BD4504DC1E3750DF0066FCF0 /* UtilMacros.swift */,
+				BDC483491E44135A009D4F63 /* ApiMacros.swift */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				BD4504E31E3750E80066FCF0 /* JokeRequestManager.swift in Sources */,
 				BD4504F71E3750F30066FCF0 /* Urls.swift in Sources */,
 				BD4504D91E3750D60066FCF0 /* BaseViewController.swift in Sources */,
+				BDC4834A1E44135A009D4F63 /* ApiMacros.swift in Sources */,
 				BD4504CE1E374B730066FCF0 /* IndicatorView.swift in Sources */,
 				BD4504F11E3750F30066FCF0 /* UIImage+Extension.swift in Sources */,
 				BD4504E21E3750E80066FCF0 /* BaseRequestManager.swift in Sources */,
