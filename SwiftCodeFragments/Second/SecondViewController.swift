@@ -16,6 +16,7 @@ class SecondViewController: BaseViewController,UITableViewDelegate,UITableViewDa
         super.viewDidLoad()
         // 初始化表格
         self.initTableView()
+        JCLog("测试log")
     }
 
     func initTableView() -> Void {
