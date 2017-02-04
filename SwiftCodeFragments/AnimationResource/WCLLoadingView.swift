@@ -177,7 +177,7 @@ class WCLLoadingView: UIView, CAAnimationDelegate {
     /**
      旋转的动画，旋转两圈
      */
-    private func angleAnimation() {
+    func angleAnimation() {
         let angleAnimation                 = CABasicAnimation.init(keyPath: "transform.rotation.z")
         angleAnimation.beginTime           = CACurrentMediaTime()
         angleAnimation.fromValue           = angle(-30)
@@ -193,7 +193,7 @@ class WCLLoadingView: UIView, CAAnimationDelegate {
     /**
      线的第一步动画，线长从长变短
      */
-    private func lineAnimationOne() {
+    func lineAnimationOne() {
         let lineAnimationOne                 = CABasicAnimation.init(keyPath: "strokeEnd")
         lineAnimationOne.beginTime           = CACurrentMediaTime()
         lineAnimationOne.duration            = duration/2
@@ -210,7 +210,7 @@ class WCLLoadingView: UIView, CAAnimationDelegate {
     /**
      线的第二步动画，线向中间平移
      */
-    private func lineAnimationTwo() {
+    func lineAnimationTwo() {
         for i in 0...3 {
             var keypath = "transform.translation.x"
             if i%2 == 1 {
@@ -259,7 +259,7 @@ class WCLLoadingView: UIView, CAAnimationDelegate {
     /**
      线的第三步动画，线由短变长
      */
-    private func lineAnimationThree() {
+    func lineAnimationThree() {
         //线移动的动画
         let lineAnimationFour                   = CABasicAnimation.init(keyPath: "strokeEnd")
         lineAnimationFour.beginTime             = CACurrentMediaTime() + duration
@@ -270,7 +270,8 @@ class WCLLoadingView: UIView, CAAnimationDelegate {
         lineAnimationFour.toValue               = 1
         for i in 0...3 {
             if i == 3 {
-                lineAnimationFour.delegate = self
+                // 可以保证停止后再开始。
+//                lineAnimationFour.delegate = self
             }
             let lineLayer = lines[i]
             lineLayer.add(lineAnimationFour, forKey: "lineAnimationFour")
