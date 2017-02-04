@@ -8,28 +8,49 @@
 
 import UIKit
 
-class SecondViewController: BaseViewController {
+class SecondViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
 
+    var tableView : UITableView!
+    var dataArray = ["loading动画"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // 初始化表格
+        self.initTableView()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func initTableView() -> Void {
+        tableView = UITableView(frame: CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - TABBAR_HEIGHT), style: .plain)
+        tableView.delegate = self
+        tableView.dataSource = self
+        self.view.addSubview(tableView)
+        let footerV = UIView(frame: CGRect.zero)
+        self.tableView.tableFooterView = footerV
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataArray.count
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "UITableViewCell")
+        //下面两个属性对应subtitle
+        cell.textLabel?.text = dataArray[indexPath.row]
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        var vc : UIViewController!
+        if indexPath.row == 0 {
+            // 动画1
+            vc = LoadingViewController()
+        }
+        
+        vc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }

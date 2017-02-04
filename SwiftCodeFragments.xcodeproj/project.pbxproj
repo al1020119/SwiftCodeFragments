@@ -35,6 +35,9 @@
 		BD4505021E37536C0066FCF0 /* ThridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4505011E37536C0066FCF0 /* ThridViewController.swift */; };
 		BD4505041E3753770066FCF0 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4505031E3753770066FCF0 /* MoreViewController.swift */; };
 		BDC4834A1E44135A009D4F63 /* ApiMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC483491E44135A009D4F63 /* ApiMacros.swift */; };
+		BDC4834D1E457797009D4F63 /* WCLLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4834C1E457797009D4F63 /* WCLLoadingView.swift */; };
+		BDC4834F1E4577A5009D4F63 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4834E1E4577A5009D4F63 /* UIColorExtension.swift */; };
+		BDC483511E4577CD009D4F63 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC483501E4577CD009D4F63 /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +74,9 @@
 		BD4505011E37536C0066FCF0 /* ThridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThridViewController.swift; sourceTree = "<group>"; };
 		BD4505031E3753770066FCF0 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		BDC483491E44135A009D4F63 /* ApiMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiMacros.swift; sourceTree = "<group>"; };
+		BDC4834C1E457797009D4F63 /* WCLLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLLoadingView.swift; sourceTree = "<group>"; };
+		BDC4834E1E4577A5009D4F63 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		BDC483501E4577CD009D4F63 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				BD4504B31E372C760066FCF0 /* AppDelegate.swift */,
+				BDC4834B1E456ED8009D4F63 /* AnimationResource */,
 				BD4504F91E3753140066FCF0 /* First */,
 				BD4504FB1E3753140066FCF0 /* Second */,
 				BD4504FC1E3753140066FCF0 /* Thrid */,
@@ -232,6 +239,7 @@
 				BD4504E71E3750F30066FCF0 /* UIImage+Extension.swift */,
 				BD4504E81E3750F30066FCF0 /* UINib+Extension.swift */,
 				BD4504E91E3750F30066FCF0 /* UIStoryboard+Extension.swift */,
+				BDC4834E1E4577A5009D4F63 /* UIColorExtension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -274,6 +282,15 @@
 				BD4505011E37536C0066FCF0 /* ThridViewController.swift */,
 			);
 			path = Thrid;
+			sourceTree = "<group>";
+		};
+		BDC4834B1E456ED8009D4F63 /* AnimationResource */ = {
+			isa = PBXGroup;
+			children = (
+				BDC4834C1E457797009D4F63 /* WCLLoadingView.swift */,
+				BDC483501E4577CD009D4F63 /* LoadingViewController.swift */,
+			);
+			path = AnimationResource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +418,7 @@
 				BD4504F01E3750F30066FCF0 /* UIFont+Extension.swift in Sources */,
 				BD4504C91E374AFA0066FCF0 /* KDInteractiveNavigationController.swift in Sources */,
 				BD4504D71E3750C10066FCF0 /* XHTabBar.swift in Sources */,
+				BDC483511E4577CD009D4F63 /* LoadingViewController.swift in Sources */,
 				BD4504F61E3750F30066FCF0 /* Tool.swift in Sources */,
 				BD4504CA1E374AFA0066FCF0 /* UIViewController+InteractiveNavigation.swift in Sources */,
 				BD4505041E3753770066FCF0 /* MoreViewController.swift in Sources */,
@@ -410,8 +428,10 @@
 				BD4504B41E372C760066FCF0 /* AppDelegate.swift in Sources */,
 				BD4504DF1E3750DF0066FCF0 /* UtilMacros.swift in Sources */,
 				BD4504DD1E3750DF0066FCF0 /* PathMacros.swift in Sources */,
+				BDC4834D1E457797009D4F63 /* WCLLoadingView.swift in Sources */,
 				BD4505001E37535F0066FCF0 /* SecondViewController.swift in Sources */,
 				BD4504F31E3750F30066FCF0 /* UIStoryboard+Extension.swift in Sources */,
+				BDC4834F1E4577A5009D4F63 /* UIColorExtension.swift in Sources */,
 				BD4504E31E3750E80066FCF0 /* JokeRequestManager.swift in Sources */,
 				BD4504F71E3750F30066FCF0 /* Urls.swift in Sources */,
 				BD4504D91E3750D60066FCF0 /* BaseViewController.swift in Sources */,
