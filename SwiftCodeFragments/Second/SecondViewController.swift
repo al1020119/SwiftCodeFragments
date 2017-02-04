@@ -12,7 +12,6 @@ class SecondViewController: BaseViewController,UITableViewDelegate,UITableViewDa
 
     var tableView : UITableView!
     var dataArray = ["loading动画","启动页面的动画"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // 初始化表格
