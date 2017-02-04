@@ -11,7 +11,7 @@ import UIKit
 class SecondViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
 
     var tableView : UITableView!
-    var dataArray = ["loading动画"]
+    var dataArray = ["loading动画","启动页面的动画"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,8 +44,9 @@ class SecondViewController: BaseViewController,UITableViewDelegate,UITableViewDa
         tableView.deselectRow(at: indexPath, animated: true)
         var vc : UIViewController!
         if indexPath.row == 0 {
-            // 动画1
             vc = LoadingViewController()
+        } else if indexPath.row == 1 {
+            vc = LaunchViewController()
         }
         
         vc.hidesBottomBarWhenPushed = true

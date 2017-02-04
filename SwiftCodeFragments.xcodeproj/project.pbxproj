@@ -38,6 +38,8 @@
 		BDC4834D1E457797009D4F63 /* WCLLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4834C1E457797009D4F63 /* WCLLoadingView.swift */; };
 		BDC4834F1E4577A5009D4F63 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4834E1E4577A5009D4F63 /* UIColorExtension.swift */; };
 		BDC483511E4577CD009D4F63 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC483501E4577CD009D4F63 /* LoadingViewController.swift */; };
+		BDCFBEA71E458B4D005FDEB0 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBEA61E458B4D005FDEB0 /* LaunchViewController.swift */; };
+		BDCFBEA91E458B5C005FDEB0 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBEA81E458B5C005FDEB0 /* LaunchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +79,8 @@
 		BDC4834C1E457797009D4F63 /* WCLLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLLoadingView.swift; sourceTree = "<group>"; };
 		BDC4834E1E4577A5009D4F63 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		BDC483501E4577CD009D4F63 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		BDCFBEA61E458B4D005FDEB0 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		BDCFBEA81E458B5C005FDEB0 /* LaunchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +293,8 @@
 			children = (
 				BDC4834C1E457797009D4F63 /* WCLLoadingView.swift */,
 				BDC483501E4577CD009D4F63 /* LoadingViewController.swift */,
+				BDCFBEA81E458B5C005FDEB0 /* LaunchView.swift */,
+				BDCFBEA61E458B4D005FDEB0 /* LaunchViewController.swift */,
 			);
 			path = AnimationResource;
 			sourceTree = "<group>";
@@ -416,10 +422,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD4504F01E3750F30066FCF0 /* UIFont+Extension.swift in Sources */,
+				BDCFBEA71E458B4D005FDEB0 /* LaunchViewController.swift in Sources */,
 				BD4504C91E374AFA0066FCF0 /* KDInteractiveNavigationController.swift in Sources */,
 				BD4504D71E3750C10066FCF0 /* XHTabBar.swift in Sources */,
 				BDC483511E4577CD009D4F63 /* LoadingViewController.swift in Sources */,
 				BD4504F61E3750F30066FCF0 /* Tool.swift in Sources */,
+				BDCFBEA91E458B5C005FDEB0 /* LaunchView.swift in Sources */,
 				BD4504CA1E374AFA0066FCF0 /* UIViewController+InteractiveNavigation.swift in Sources */,
 				BD4505041E3753770066FCF0 /* MoreViewController.swift in Sources */,
 				BD4504CF1E374B730066FCF0 /* MRPullToRefreshLoadMore.swift in Sources */,
