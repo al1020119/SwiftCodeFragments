@@ -26,7 +26,7 @@ class LoadingView: UIView,CAAnimationDelegate {
     //显示加载动画在指定的view上
     class func showLoadingWith(view:UIView)->LoadingView
     {
-        let loadingView = LoadingView.init(frame: CGRect.init(x: 0, y: 0, width: view.width(), height: view.height()))
+        let loadingView = LoadingView.init(frame: CGRect.init(x: 0, y: 0, width: view.width, height: view.height))
         view.addSubview(loadingView)
     
         return loadingView
@@ -62,37 +62,37 @@ class LoadingView: UIView,CAAnimationDelegate {
         self.backgroundColor = UIColor.white
         
         let round1 = UIView.init()
-        round1.width(w: 10)
-        round1.height(h: 10)
-        round1.layer.cornerRadius = round1.height()/2
+        round1.width = 10
+        round1.height = 10
+        round1.layer.cornerRadius = round1.height/2
         round1.backgroundColor = round1Color
         self.round1 = round1
 
         let round2 = UIView.init()
-        round2.width(w: 10)
-        round2.height(h: 10)
+        round2.width = 10
+        round2.height = 10
         round2.backgroundColor = round2Color
-        round2.layer.cornerRadius = round2.height()/2
+        round2.layer.cornerRadius = round2.height/2
         self.round2 = round2
         
         let round3 = UIView.init()
         self.round3 = round3
-        round3.width(w: 10)
-        round3.height(h: 10)
+        round3.width = 10
+        round3.height = 10
         round3.backgroundColor = round3Color
-        round3.layer.cornerRadius = round3.height()/2
+        round3.layer.cornerRadius = round3.height/2
 
         self.addSubview(round1)
         self.addSubview(round2)
         self.addSubview(round3)
         
-        round2.centerX(cX: self.centerX())
-        round2.centerY(cY: self.centerY() - self.width()/10)
-        round1.centerX(cX: round2.centerX() - 20)
-        round1.centerY(cY: round2.centerY())
+        round2.centerX = self.centerX
+        round2.centerY = self.centerY - self.width/10
+        round1.centerX = round2.centerX - 20
+        round1.centerY = round2.centerY
         
-        round3.centerX(cX: round2.centerX() + 20)
-        round3.centerY(cY: round2.centerY())
+        round3.centerX = round2.centerX + 20
+        round3.centerY = round2.centerY
         
         startAnim()
         
@@ -100,9 +100,9 @@ class LoadingView: UIView,CAAnimationDelegate {
     
     func startAnim()
     {
-        let otherRoundCenter1 = CGPoint.init(x: round1.centerX() + 10, y: round2.centerY())
+        let otherRoundCenter1 = CGPoint.init(x: round1.centerX + 10, y: round2.centerY)
         
-        let otherRoundCenter2 = CGPoint.init(x: round2.centerX() + 10, y: round2.centerY())
+        let otherRoundCenter2 = CGPoint.init(x: round2.centerX + 10, y: round2.centerY)
         
         //圆1的路径
         let path1 = UIBezierPath.init()
@@ -176,14 +176,14 @@ class LoadingView: UIView,CAAnimationDelegate {
    
     override func layoutSubviews() {
         super.layoutSubviews()
-        round2.centerX(cX: self.centerX())
-        round2.centerY(cY: self.centerY())
+        round2.centerX = self.centerX
+        round2.centerY = self.centerY
         
-        round1.centerX(cX: round2.centerX() - 20)
-        round1.centerY(cY: round2.centerY())
+        round1.centerX = round2.centerX - 20
+        round1.centerY = round2.centerY
         
-        round3.centerX(cX: round2.centerX() + 20)
-        round3.centerY(cY: round2.centerY())
+        round3.centerX = round2.centerX + 20
+        round3.centerY = round2.centerY
     }
 
     ///动画停止

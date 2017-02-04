@@ -1,5 +1,6 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+
+  platform :ios, '9.0'
 
 target 'SwiftCodeFragments' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -9,6 +10,7 @@ target 'SwiftCodeFragments' do
 
  # 网络请求
  pod 'Alamofire', '~> 4.3.0'
-
+ # Cryptography in Swift. SHA, MD5, CRC, PBKDF, Poly1305, HMAC, ChaCha20, Rabbit, Blowfish, AES.
+ pod 'CryptoSwift'
 
 end

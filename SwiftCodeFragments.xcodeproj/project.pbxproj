@@ -23,7 +23,6 @@
 		BD4504E31E3750E80066FCF0 /* JokeRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4504E11E3750E80066FCF0 /* JokeRequestManager.swift */; };
 		BD4504F21E3750F30066FCF0 /* UINib+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4504E81E3750F30066FCF0 /* UINib+Extension.swift */; };
 		BD4504F31E3750F30066FCF0 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4504E91E3750F30066FCF0 /* UIStoryboard+Extension.swift */; };
-		BD4504F41E3750F30066FCF0 /* UIView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4504EA1E3750F30066FCF0 /* UIView+Util.swift */; };
 		BD4504F51E3750F30066FCF0 /* DHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4504EC1E3750F30066FCF0 /* DHButton.swift */; };
 		BD4504F61E3750F30066FCF0 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4504ED1E3750F30066FCF0 /* Tool.swift */; };
 		BD4504F71E3750F30066FCF0 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4504EE1E3750F30066FCF0 /* Urls.swift */; };
@@ -95,7 +94,6 @@
 		BD4504E11E3750E80066FCF0 /* JokeRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeRequestManager.swift; sourceTree = "<group>"; };
 		BD4504E81E3750F30066FCF0 /* UINib+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINib+Extension.swift"; sourceTree = "<group>"; };
 		BD4504E91E3750F30066FCF0 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
-		BD4504EA1E3750F30066FCF0 /* UIView+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Util.swift"; path = "../Category/UIView+Util.swift"; sourceTree = "<group>"; };
 		BD4504EC1E3750F30066FCF0 /* DHButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHButton.swift; sourceTree = "<group>"; };
 		BD4504ED1E3750F30066FCF0 /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		BD4504EE1E3750F30066FCF0 /* Urls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
@@ -256,7 +254,6 @@
 				BD4504EE1E3750F30066FCF0 /* Urls.swift */,
 				BD4504EC1E3750F30066FCF0 /* DHButton.swift */,
 				BD4504E41E3750F30066FCF0 /* Category */,
-				BD4504EB1E3750F30066FCF0 /* CustomView */,
 			);
 			path = CodeFragments;
 			sourceTree = "<group>";
@@ -318,14 +315,6 @@
 				BDCFBF311E45B79E005FDEB0 /* String+JCString.swift */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		BD4504EB1E3750F30066FCF0 /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-				BD4504EA1E3750F30066FCF0 /* UIView+Util.swift */,
-			);
-			path = CustomView;
 			sourceTree = "<group>";
 		};
 		BD4504F91E3753140066FCF0 /* First */ = {
@@ -683,7 +672,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -752,7 +741,6 @@
 				BDCFBF681E45B7D1005FDEB0 /* UITextView+JCTextView.swift in Sources */,
 				BDCFBF2A1E45B784005FDEB0 /* NSMutableAttributedString+JCAttributedString.swift in Sources */,
 				BDCFBEAD1E45A312005FDEB0 /* ImageMaskAnimator.swift in Sources */,
-				BD4504F41E3750F30066FCF0 /* UIView+Util.swift in Sources */,
 				BD4504F21E3750F30066FCF0 /* UINib+Extension.swift in Sources */,
 				BDCFBEB11E45A345005FDEB0 /* TransitionViewController.swift in Sources */,
 				BD4504FE1E37534D0066FCF0 /* FirstViewController.swift in Sources */,

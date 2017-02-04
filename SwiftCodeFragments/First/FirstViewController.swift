@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import CryptoSwift
 
 class FirstViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -20,6 +21,8 @@ class FirstViewController: BaseViewController {
         super.viewWillAppear(animated)
         // 请求文字内容
         self.reqestContent()
+        // 测试加密
+        self.sslAction()
     }
 
     func reqestContent() -> Void {
@@ -30,5 +33,17 @@ class FirstViewController: BaseViewController {
                 }
             }
         }
+    }
+    
+    // test 加密算法
+    func sslAction() -> Void {
+        let pwd = "123456"
+        let lastPwd = pwd.md5()
+        JCLog(lastPwd)
+        
+        let pwd2 = pwd + "name"
+        let lastPwd2 = pwd2.md5()
+        JCLog(lastPwd2)
+        
     }
 }
