@@ -44,6 +44,8 @@
 		BDCFBEAE1E45A312005FDEB0 /* ImageMaskTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBEAB1E45A312005FDEB0 /* ImageMaskTransition.swift */; };
 		BDCFBEAF1E45A312005FDEB0 /* ImageMaskUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBEAC1E45A312005FDEB0 /* ImageMaskUtils.swift */; };
 		BDCFBEB11E45A345005FDEB0 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBEB01E45A345005FDEB0 /* TransitionViewController.swift */; };
+		BDCFBEB71E45AE88005FDEB0 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBEB61E45AE88005FDEB0 /* LoadingView.swift */; };
+		BDCFBEB91E45AEA4005FDEB0 /* Loading2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBEB81E45AEA4005FDEB0 /* Loading2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +91,8 @@
 		BDCFBEAB1E45A312005FDEB0 /* ImageMaskTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageMaskTransition.swift; sourceTree = "<group>"; };
 		BDCFBEAC1E45A312005FDEB0 /* ImageMaskUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageMaskUtils.swift; sourceTree = "<group>"; };
 		BDCFBEB01E45A345005FDEB0 /* TransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
+		BDCFBEB61E45AE88005FDEB0 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		BDCFBEB81E45AEA4005FDEB0 /* Loading2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loading2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +303,7 @@
 		BDC4834B1E456ED8009D4F63 /* AnimationResource */ = {
 			isa = PBXGroup;
 			children = (
+				BDCFBEB51E45AE6E005FDEB0 /* loading2 */,
 				BDCFBEB21E45A6CE005FDEB0 /* loading */,
 				BDCFBEB31E45A6E2005FDEB0 /* launch */,
 				BDCFBEB41E45A6F3005FDEB0 /* transition */,
@@ -333,6 +338,15 @@
 				BDCFBEB01E45A345005FDEB0 /* TransitionViewController.swift */,
 			);
 			name = transition;
+			sourceTree = "<group>";
+		};
+		BDCFBEB51E45AE6E005FDEB0 /* loading2 */ = {
+			isa = PBXGroup;
+			children = (
+				BDCFBEB61E45AE88005FDEB0 /* LoadingView.swift */,
+				BDCFBEB81E45AEA4005FDEB0 /* Loading2ViewController.swift */,
+			);
+			name = loading2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,8 +486,10 @@
 				BD4504B41E372C760066FCF0 /* AppDelegate.swift in Sources */,
 				BD4504DF1E3750DF0066FCF0 /* UtilMacros.swift in Sources */,
 				BD4504DD1E3750DF0066FCF0 /* PathMacros.swift in Sources */,
+				BDCFBEB91E45AEA4005FDEB0 /* Loading2ViewController.swift in Sources */,
 				BDCFBEAF1E45A312005FDEB0 /* ImageMaskUtils.swift in Sources */,
 				BDC4834D1E457797009D4F63 /* WCLLoadingView.swift in Sources */,
+				BDCFBEB71E45AE88005FDEB0 /* LoadingView.swift in Sources */,
 				BD4505001E37535F0066FCF0 /* SecondViewController.swift in Sources */,
 				BD4504F31E3750F30066FCF0 /* UIStoryboard+Extension.swift in Sources */,
 				BDC4834F1E4577A5009D4F63 /* UIColorExtension.swift in Sources */,
