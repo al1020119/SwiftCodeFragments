@@ -14,6 +14,7 @@ class TransitionSecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "secondtitle"
         self.view.backgroundColor = UIColor.red
         // Do any additional setup after loading the view.
     }

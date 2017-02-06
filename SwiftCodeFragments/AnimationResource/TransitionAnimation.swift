@@ -10,7 +10,7 @@ import UIKit
 
 class TransitionAnimation: NSObject,UIViewControllerAnimatedTransitioning {
     
-    var isIn : Bool?
+    var isIn : Bool = true
     
     // 动画时间 -- 必须的方法
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
@@ -19,11 +19,11 @@ class TransitionAnimation: NSObject,UIViewControllerAnimatedTransitioning {
     // 具体动画 -- 必须的方法
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let containerView = transitionContext.containerView
+        // 如果是present的方式，下面的两个view就是包含导航栏的，一起动。push的话，导航栏就不会动
         let fromView = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)?.view
         let toView = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)?.view
         
-        
-        if self.isIn! {
+        if self.isIn {
             toView?.alpha = 1.0
             fromView?.alpha = 1.0
             fromView?.frame = CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT)

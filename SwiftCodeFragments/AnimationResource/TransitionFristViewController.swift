@@ -12,6 +12,8 @@ class TransitionFristViewController: UIViewController,UIViewControllerTransition
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "onetitle"
+        self.view.backgroundColor = UIColor.lightGray   
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

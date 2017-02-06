@@ -74,6 +74,8 @@
 		BDCFBF7C1E483141005FDEB0 /* TransitionFristViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBF7B1E483141005FDEB0 /* TransitionFristViewController.swift */; };
 		BDCFBF7E1E483226005FDEB0 /* TransitionSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBF7D1E483226005FDEB0 /* TransitionSecondViewController.swift */; };
 		BDCFBF801E48332F005FDEB0 /* TransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBF7F1E48332F005FDEB0 /* TransitionAnimation.swift */; };
+		BDCFBF821E486AB3005FDEB0 /* TransitionFirstPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBF811E486AB3005FDEB0 /* TransitionFirstPushViewController.swift */; };
+		BDCFBF841E486AC5005FDEB0 /* TransitionSecondPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBF831E486AC5005FDEB0 /* TransitionSecondPushViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -149,6 +151,8 @@
 		BDCFBF7B1E483141005FDEB0 /* TransitionFristViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionFristViewController.swift; sourceTree = "<group>"; };
 		BDCFBF7D1E483226005FDEB0 /* TransitionSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSecondViewController.swift; sourceTree = "<group>"; };
 		BDCFBF7F1E48332F005FDEB0 /* TransitionAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimation.swift; sourceTree = "<group>"; };
+		BDCFBF811E486AB3005FDEB0 /* TransitionFirstPushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionFirstPushViewController.swift; sourceTree = "<group>"; };
+		BDCFBF831E486AC5005FDEB0 /* TransitionSecondPushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSecondPushViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,6 +398,8 @@
 				BDCFBF7B1E483141005FDEB0 /* TransitionFristViewController.swift */,
 				BDCFBF7D1E483226005FDEB0 /* TransitionSecondViewController.swift */,
 				BDCFBF7F1E48332F005FDEB0 /* TransitionAnimation.swift */,
+				BDCFBF811E486AB3005FDEB0 /* TransitionFirstPushViewController.swift */,
+				BDCFBF831E486AC5005FDEB0 /* TransitionSecondPushViewController.swift */,
 			);
 			name = transition;
 			sourceTree = "<group>";
@@ -709,6 +715,7 @@
 				BD4504B41E372C760066FCF0 /* AppDelegate.swift in Sources */,
 				BDCFBF5D1E45B7D1005FDEB0 /* UIDevice+JCDevice.swift in Sources */,
 				BD4504DF1E3750DF0066FCF0 /* UtilMacros.swift in Sources */,
+				BDCFBF821E486AB3005FDEB0 /* TransitionFirstPushViewController.swift in Sources */,
 				BDCFBF631E45B7D1005FDEB0 /* UIResponder+JCResponder.swift in Sources */,
 				BDCFBF5B1E45B7D1005FDEB0 /* UIBarButtonItem+JCBlock.swift in Sources */,
 				BD4504DD1E3750DF0066FCF0 /* PathMacros.swift in Sources */,
@@ -748,6 +755,7 @@
 				BDCFBEAE1E45A312005FDEB0 /* ImageMaskTransition.swift in Sources */,
 				BD4504F51E3750F30066FCF0 /* DHButton.swift in Sources */,
 				BDCFBF241E45B76A005FDEB0 /* Data+JCData.swift in Sources */,
+				BDCFBF841E486AC5005FDEB0 /* TransitionSecondPushViewController.swift in Sources */,
 				BDCFBF2C1E45B78C005FDEB0 /* NSNumber+JCNumber.swift in Sources */,
 				BDCFBF6A1E45B7D1005FDEB0 /* UIWebView+JCWebView.swift in Sources */,
 				BDCFBF681E45B7D1005FDEB0 /* UITextView+JCTextView.swift in Sources */,

@@ -19,7 +19,7 @@ class BaseViewController: UIViewController {
         //navigationController?.navigationBar.shadowImage = UIImage()
     
         // 设置统一的背景颜色
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.darkGray
     
     }
 

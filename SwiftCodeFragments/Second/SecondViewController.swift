@@ -11,7 +11,7 @@ import UIKit
 class SecondViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
 
     var tableView : UITableView!
-    var dataArray = ["loading动画和转场动画","启动页面的动画","加载动画2","最简单的转场动画"]
+    var dataArray = ["loading动画和转场动画","启动页面的动画","加载动画2","最简单的转场动画","push的转场动画"]
     override func viewDidLoad() {
         super.viewDidLoad()
         // 初始化表格
@@ -51,6 +51,8 @@ class SecondViewController: BaseViewController,UITableViewDelegate,UITableViewDa
             vc = Loading2ViewController()
         } else if indexPath.row == 3 {
             vc = TransitionFristViewController()
+        } else if indexPath.row == 4 {
+            vc = TransitionFirstPushViewController()
         }
         
         vc.hidesBottomBarWhenPushed = true
