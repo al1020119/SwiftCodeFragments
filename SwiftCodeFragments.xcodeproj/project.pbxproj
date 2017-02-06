@@ -76,6 +76,19 @@
 		BDCFBF801E48332F005FDEB0 /* TransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBF7F1E48332F005FDEB0 /* TransitionAnimation.swift */; };
 		BDCFBF821E486AB3005FDEB0 /* TransitionFirstPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBF811E486AB3005FDEB0 /* TransitionFirstPushViewController.swift */; };
 		BDCFBF841E486AC5005FDEB0 /* TransitionSecondPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBF831E486AC5005FDEB0 /* TransitionSecondPushViewController.swift */; };
+		BDCFBFBD1E4881D7005FDEB0 /* 9squares-AlBoardman.json in Resources */ = {isa = PBXBuildFile; fileRef = BDCFBFB01E4881D7005FDEB0 /* 9squares-AlBoardman.json */; };
+		BDCFBFBE1E4881D7005FDEB0 /* AirbnbAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBFB11E4881D7005FDEB0 /* AirbnbAnimationViewController.swift */; };
+		BDCFBFBF1E4881D7005FDEB0 /* HamburgerArrow.json in Resources */ = {isa = PBXBuildFile; fileRef = BDCFBFB21E4881D7005FDEB0 /* HamburgerArrow.json */; };
+		BDCFBFC01E4881D7005FDEB0 /* IconTransitions.json in Resources */ = {isa = PBXBuildFile; fileRef = BDCFBFB31E4881D7005FDEB0 /* IconTransitions.json */; };
+		BDCFBFC11E4881D7005FDEB0 /* LottieLogo1.json in Resources */ = {isa = PBXBuildFile; fileRef = BDCFBFB41E4881D7005FDEB0 /* LottieLogo1.json */; };
+		BDCFBFC21E4881D7005FDEB0 /* LottieLogo1_masked.json in Resources */ = {isa = PBXBuildFile; fileRef = BDCFBFB51E4881D7005FDEB0 /* LottieLogo1_masked.json */; };
+		BDCFBFC31E4881D7005FDEB0 /* LottieLogo2.json in Resources */ = {isa = PBXBuildFile; fileRef = BDCFBFB61E4881D7005FDEB0 /* LottieLogo2.json */; };
+		BDCFBFC41E4881D7005FDEB0 /* MotionCorpse-Jrcanest.json in Resources */ = {isa = PBXBuildFile; fileRef = BDCFBFB71E4881D7005FDEB0 /* MotionCorpse-Jrcanest.json */; };
+		BDCFBFC51E4881D7005FDEB0 /* PinJump.json in Resources */ = {isa = PBXBuildFile; fileRef = BDCFBFB81E4881D7005FDEB0 /* PinJump.json */; };
+		BDCFBFC61E4881D7005FDEB0 /* TwitterHeart.json in Resources */ = {isa = PBXBuildFile; fileRef = BDCFBFB91E4881D7005FDEB0 /* TwitterHeart.json */; };
+		BDCFBFC71E4881D7005FDEB0 /* vcTransition1.json in Resources */ = {isa = PBXBuildFile; fileRef = BDCFBFBA1E4881D7005FDEB0 /* vcTransition1.json */; };
+		BDCFBFC81E4881D7005FDEB0 /* vcTransition2.json in Resources */ = {isa = PBXBuildFile; fileRef = BDCFBFBB1E4881D7005FDEB0 /* vcTransition2.json */; };
+		BDCFBFC91E4881D7005FDEB0 /* Watermelon.json in Resources */ = {isa = PBXBuildFile; fileRef = BDCFBFBC1E4881D7005FDEB0 /* Watermelon.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -153,6 +166,19 @@
 		BDCFBF7F1E48332F005FDEB0 /* TransitionAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimation.swift; sourceTree = "<group>"; };
 		BDCFBF811E486AB3005FDEB0 /* TransitionFirstPushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionFirstPushViewController.swift; sourceTree = "<group>"; };
 		BDCFBF831E486AC5005FDEB0 /* TransitionSecondPushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSecondPushViewController.swift; sourceTree = "<group>"; };
+		BDCFBFB01E4881D7005FDEB0 /* 9squares-AlBoardman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "9squares-AlBoardman.json"; sourceTree = "<group>"; };
+		BDCFBFB11E4881D7005FDEB0 /* AirbnbAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirbnbAnimationViewController.swift; sourceTree = "<group>"; };
+		BDCFBFB21E4881D7005FDEB0 /* HamburgerArrow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HamburgerArrow.json; sourceTree = "<group>"; };
+		BDCFBFB31E4881D7005FDEB0 /* IconTransitions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IconTransitions.json; sourceTree = "<group>"; };
+		BDCFBFB41E4881D7005FDEB0 /* LottieLogo1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieLogo1.json; sourceTree = "<group>"; };
+		BDCFBFB51E4881D7005FDEB0 /* LottieLogo1_masked.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieLogo1_masked.json; sourceTree = "<group>"; };
+		BDCFBFB61E4881D7005FDEB0 /* LottieLogo2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieLogo2.json; sourceTree = "<group>"; };
+		BDCFBFB71E4881D7005FDEB0 /* MotionCorpse-Jrcanest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "MotionCorpse-Jrcanest.json"; sourceTree = "<group>"; };
+		BDCFBFB81E4881D7005FDEB0 /* PinJump.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PinJump.json; sourceTree = "<group>"; };
+		BDCFBFB91E4881D7005FDEB0 /* TwitterHeart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TwitterHeart.json; sourceTree = "<group>"; };
+		BDCFBFBA1E4881D7005FDEB0 /* vcTransition1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition1.json; sourceTree = "<group>"; };
+		BDCFBFBB1E4881D7005FDEB0 /* vcTransition2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition2.json; sourceTree = "<group>"; };
+		BDCFBFBC1E4881D7005FDEB0 /* Watermelon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Watermelon.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +388,7 @@
 		BDC4834B1E456ED8009D4F63 /* AnimationResource */ = {
 			isa = PBXGroup;
 			children = (
+				BDCFBFAF1E4881D7005FDEB0 /* airbnb */,
 				BDCFBEB51E45AE6E005FDEB0 /* loading2 */,
 				BDCFBEB21E45A6CE005FDEB0 /* loading */,
 				BDCFBEB31E45A6E2005FDEB0 /* launch */,
@@ -575,6 +602,26 @@
 			path = UIWebView;
 			sourceTree = "<group>";
 		};
+		BDCFBFAF1E4881D7005FDEB0 /* airbnb */ = {
+			isa = PBXGroup;
+			children = (
+				BDCFBFB11E4881D7005FDEB0 /* AirbnbAnimationViewController.swift */,
+				BDCFBFB01E4881D7005FDEB0 /* 9squares-AlBoardman.json */,
+				BDCFBFB21E4881D7005FDEB0 /* HamburgerArrow.json */,
+				BDCFBFB31E4881D7005FDEB0 /* IconTransitions.json */,
+				BDCFBFB41E4881D7005FDEB0 /* LottieLogo1.json */,
+				BDCFBFB51E4881D7005FDEB0 /* LottieLogo1_masked.json */,
+				BDCFBFB61E4881D7005FDEB0 /* LottieLogo2.json */,
+				BDCFBFB71E4881D7005FDEB0 /* MotionCorpse-Jrcanest.json */,
+				BDCFBFB81E4881D7005FDEB0 /* PinJump.json */,
+				BDCFBFB91E4881D7005FDEB0 /* TwitterHeart.json */,
+				BDCFBFBA1E4881D7005FDEB0 /* vcTransition1.json */,
+				BDCFBFBB1E4881D7005FDEB0 /* vcTransition2.json */,
+				BDCFBFBC1E4881D7005FDEB0 /* Watermelon.json */,
+			);
+			path = airbnb;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -638,7 +685,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCFBFBF1E4881D7005FDEB0 /* HamburgerArrow.json in Resources */,
 				BD4504BB1E372C760066FCF0 /* Assets.xcassets in Resources */,
+				BDCFBFC61E4881D7005FDEB0 /* TwitterHeart.json in Resources */,
+				BDCFBFC51E4881D7005FDEB0 /* PinJump.json in Resources */,
+				BDCFBFC81E4881D7005FDEB0 /* vcTransition2.json in Resources */,
+				BDCFBFC71E4881D7005FDEB0 /* vcTransition1.json in Resources */,
+				BDCFBFC21E4881D7005FDEB0 /* LottieLogo1_masked.json in Resources */,
+				BDCFBFC41E4881D7005FDEB0 /* MotionCorpse-Jrcanest.json in Resources */,
+				BDCFBFBD1E4881D7005FDEB0 /* 9squares-AlBoardman.json in Resources */,
+				BDCFBFC11E4881D7005FDEB0 /* LottieLogo1.json in Resources */,
+				BDCFBFC01E4881D7005FDEB0 /* IconTransitions.json in Resources */,
+				BDCFBFC31E4881D7005FDEB0 /* LottieLogo2.json in Resources */,
+				BDCFBFC91E4881D7005FDEB0 /* Watermelon.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,6 +807,7 @@
 				BDCFBF591E45B7D1005FDEB0 /* CALayer+JCLayer.swift in Sources */,
 				BDCFBF611E45B7D1005FDEB0 /* UINavigationController+JCNavigationAttributes.swift in Sources */,
 				BDCFBF7C1E483141005FDEB0 /* TransitionFristViewController.swift in Sources */,
+				BDCFBFBE1E4881D7005FDEB0 /* AirbnbAnimationViewController.swift in Sources */,
 				BDCFBF7E1E483226005FDEB0 /* TransitionSecondViewController.swift in Sources */,
 				BDCFBF281E45B77A005FDEB0 /* NSDate+JCDate.swift in Sources */,
 				BD4504E21E3750E80066FCF0 /* BaseRequestManager.swift in Sources */,
