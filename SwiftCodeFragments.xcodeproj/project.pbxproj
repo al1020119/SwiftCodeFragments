@@ -71,6 +71,9 @@
 		BDCFBF681E45B7D1005FDEB0 /* UITextView+JCTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBF531E45B7D1005FDEB0 /* UITextView+JCTextView.swift */; };
 		BDCFBF691E45B7D1005FDEB0 /* UIView+JCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBF551E45B7D1005FDEB0 /* UIView+JCView.swift */; };
 		BDCFBF6A1E45B7D1005FDEB0 /* UIWebView+JCWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBF571E45B7D1005FDEB0 /* UIWebView+JCWebView.swift */; };
+		BDCFBF7C1E483141005FDEB0 /* TransitionFristViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBF7B1E483141005FDEB0 /* TransitionFristViewController.swift */; };
+		BDCFBF7E1E483226005FDEB0 /* TransitionSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBF7D1E483226005FDEB0 /* TransitionSecondViewController.swift */; };
+		BDCFBF801E48332F005FDEB0 /* TransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBF7F1E48332F005FDEB0 /* TransitionAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,6 +146,9 @@
 		BDCFBF531E45B7D1005FDEB0 /* UITextView+JCTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+JCTextView.swift"; sourceTree = "<group>"; };
 		BDCFBF551E45B7D1005FDEB0 /* UIView+JCView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JCView.swift"; sourceTree = "<group>"; };
 		BDCFBF571E45B7D1005FDEB0 /* UIWebView+JCWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+JCWebView.swift"; sourceTree = "<group>"; };
+		BDCFBF7B1E483141005FDEB0 /* TransitionFristViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionFristViewController.swift; sourceTree = "<group>"; };
+		BDCFBF7D1E483226005FDEB0 /* TransitionSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSecondViewController.swift; sourceTree = "<group>"; };
+		BDCFBF7F1E48332F005FDEB0 /* TransitionAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,6 +391,9 @@
 				BDCFBEAB1E45A312005FDEB0 /* ImageMaskTransition.swift */,
 				BDCFBEAC1E45A312005FDEB0 /* ImageMaskUtils.swift */,
 				BDCFBEB01E45A345005FDEB0 /* TransitionViewController.swift */,
+				BDCFBF7B1E483141005FDEB0 /* TransitionFristViewController.swift */,
+				BDCFBF7D1E483226005FDEB0 /* TransitionSecondViewController.swift */,
+				BDCFBF7F1E48332F005FDEB0 /* TransitionAnimation.swift */,
 			);
 			name = transition;
 			sourceTree = "<group>";
@@ -672,7 +681,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -712,6 +721,7 @@
 				BD4504F31E3750F30066FCF0 /* UIStoryboard+Extension.swift in Sources */,
 				BDCFBF301E45B795005FDEB0 /* URL+JCURL.swift in Sources */,
 				BDCFBF5F1E45B7D1005FDEB0 /* UIImage+JCImage.swift in Sources */,
+				BDCFBF801E48332F005FDEB0 /* TransitionAnimation.swift in Sources */,
 				BDCFBF671E45B7D1005FDEB0 /* UITextField+JCTextField.swift in Sources */,
 				BDCFBF661E45B7D1005FDEB0 /* UITableViewCell+JCSeparator.swift in Sources */,
 				BDCFBF271E45B77A005FDEB0 /* Date+JCDate.swift in Sources */,
@@ -730,6 +740,8 @@
 				BDCFBF5A1E45B7D1005FDEB0 /* JCGraphicsUtilities.swift in Sources */,
 				BDCFBF591E45B7D1005FDEB0 /* CALayer+JCLayer.swift in Sources */,
 				BDCFBF611E45B7D1005FDEB0 /* UINavigationController+JCNavigationAttributes.swift in Sources */,
+				BDCFBF7C1E483141005FDEB0 /* TransitionFristViewController.swift in Sources */,
+				BDCFBF7E1E483226005FDEB0 /* TransitionSecondViewController.swift in Sources */,
 				BDCFBF281E45B77A005FDEB0 /* NSDate+JCDate.swift in Sources */,
 				BD4504E21E3750E80066FCF0 /* BaseRequestManager.swift in Sources */,
 				BDCFBF5C1E45B7D1005FDEB0 /* UIColor+JCColor.swift in Sources */,

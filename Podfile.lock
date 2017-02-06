@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (4.3.0)
   - CryptoSwift (0.6.7)
+  - lottie-ios (1.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3.0)
   - CryptoSwift
+  - lottie-ios
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   CryptoSwift: 685ae257941e5447474348a2b545583e1a16b573
+  lottie-ios: c40d67c1481d6fb9fa24fe46731ac823f5f6675b
 
-PODFILE CHECKSUM: 90cf00ab2076109bc4661931d605c4c6ce4ccf22
+PODFILE CHECKSUM: 91f2c757d21baa51bce6e521580e8bb8f7f3c1a0
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1

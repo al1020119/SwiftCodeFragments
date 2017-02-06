@@ -9,8 +9,9 @@ target 'SwiftCodeFragments' do
   # Pods for SwiftCodeFragments
 
  # 网络请求
- pod 'Alamofire', '~> 4.3.0'
+    pod 'Alamofire', '~> 4.3.0'
  # Cryptography in Swift. SHA, MD5, CRC, PBKDF, Poly1305, HMAC, ChaCha20, Rabbit, Blowfish, AES.
- pod 'CryptoSwift'
-
+    pod 'CryptoSwift'
+ # airbnb动画
+    pod 'lottie-ios'
 end
