@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import KMCGeigerCounter
+import GDPerformanceView_Swift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -45,11 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.makeKeyAndVisible()
         
-        
-        #if !TARGET_IPHONE_SIMULATOR
-//            [KMCGeigerCounter sharedGeigerCounter].enabled = YES;
-            KMCGeigerCounter.shared().isEnabled = false
-        #endif
+        GDPerformanceMonitor.sharedInstance.startMonitoring()
         
         return true
     }

@@ -15,6 +15,7 @@ target 'SwiftCodeFragments' do
  # airbnb动画
     pod 'lottie-ios'
     
-    pod 'KMCGeigerCounter'
+    # 实时检查FPS/CPU的工具
+    pod 'GDPerformanceView-Swift', '~> 1.1.2'
     
 end

@@ -1,21 +1,21 @@
 PODS:
   - Alamofire (4.3.0)
   - CryptoSwift (0.6.7)
-  - KMCGeigerCounter (0.2.2)
+  - GDPerformanceView-Swift (1.1.2)
   - lottie-ios (1.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3.0)
   - CryptoSwift
-  - KMCGeigerCounter
+  - GDPerformanceView-Swift (~> 1.1.2)
   - lottie-ios
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   CryptoSwift: 685ae257941e5447474348a2b545583e1a16b573
-  KMCGeigerCounter: f8cc3c4aa19fc6f8cec168fb03b364b84c118a7a
+  GDPerformanceView-Swift: 18086952416fa8af2df0e7bc8cfdda63afc7e0b6
   lottie-ios: c40d67c1481d6fb9fa24fe46731ac823f5f6675b
 
-PODFILE CHECKSUM: f7d5ec3f6365a5e948702f5fcc559f52ef884d2c
+PODFILE CHECKSUM: 27e000d249c4eddac263fa03d0c78473fbd63ef5
 
 COCOAPODS: 1.1.1
