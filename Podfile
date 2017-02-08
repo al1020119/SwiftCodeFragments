@@ -14,4 +14,7 @@ target 'SwiftCodeFragments' do
     pod 'CryptoSwift'
  # airbnb动画
     pod 'lottie-ios'
+    
+    pod 'KMCGeigerCounter'
+    
 end

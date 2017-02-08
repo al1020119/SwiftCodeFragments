@@ -179,6 +179,7 @@
 		BDCFBFBA1E4881D7005FDEB0 /* vcTransition1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition1.json; sourceTree = "<group>"; };
 		BDCFBFBB1E4881D7005FDEB0 /* vcTransition2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition2.json; sourceTree = "<group>"; };
 		BDCFBFBC1E4881D7005FDEB0 /* Watermelon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Watermelon.json; sourceTree = "<group>"; };
+		BDCFBFCA1E4AB837005FDEB0 /* SwiftCodeFragments-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftCodeFragments-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				BD4504B31E372C760066FCF0 /* AppDelegate.swift */,
+				BDCFBFCA1E4AB837005FDEB0 /* SwiftCodeFragments-Bridging-Header.h */,
 				BDC4834B1E456ED8009D4F63 /* AnimationResource */,
 				BD4504F91E3753140066FCF0 /* First */,
 				BD4504FB1E3753140066FCF0 /* Second */,
@@ -658,6 +660,7 @@
 					BD4504AF1E372C760066FCF0 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 72D439SU53;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -927,11 +930,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 72D439SU53;
 				INFOPLIST_FILE = SwiftCodeFragments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SpeedX.SwiftCodeFragments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftCodeFragments/SwiftCodeFragments-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -942,11 +948,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 72D439SU53;
 				INFOPLIST_FILE = SwiftCodeFragments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SpeedX.SwiftCodeFragments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftCodeFragments/SwiftCodeFragments-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KMCGeigerCounter
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -43,6 +44,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //tabBarController.showControllerIndex(3)
         
         window?.makeKeyAndVisible()
+        
+        
+        #if !TARGET_IPHONE_SIMULATOR
+//            [KMCGeigerCounter sharedGeigerCounter].enabled = YES;
+            KMCGeigerCounter.shared().isEnabled = false
+        #endif
         
         return true
     }
