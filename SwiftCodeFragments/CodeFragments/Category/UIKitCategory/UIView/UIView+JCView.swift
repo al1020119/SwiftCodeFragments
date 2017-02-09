@@ -741,4 +741,22 @@ extension UIView {
             return (self.superview?.height)! - self.height - self.y;
         }
     }
+    
+////    - (void)setTapActionWithBlock:(void (^)(void))block {
+//    func setTapActionWithBlock(void (^)(void)block) -> <#return type#> {
+//        <#function body#>
+//    }
+//    self.userInteractionEnabled = YES;
+//    UITapGestureRecognizer *gesture = objc_getAssociatedObject(self, &kDTActionHandlerTapGestureKey);
+//    
+//    if (!gesture) {
+//    gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(__handleActionForTapGesture:)];
+//    [self addGestureRecognizer:gesture];
+//    objc_setAssociatedObject(self, &kDTActionHandlerTapGestureKey, gesture, OBJC_ASSOCIATION_RETAIN);
+//    }
+//    
+//    objc_setAssociatedObject(self, &kDTActionHandlerTapBlockKey, block, OBJC_ASSOCIATION_COPY);
+////    }
+
+    
 }

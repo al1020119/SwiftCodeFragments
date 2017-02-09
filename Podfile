@@ -17,5 +17,7 @@ target 'SwiftCodeFragments' do
     
     # 实时检查FPS/CPU的工具
     pod 'GDPerformanceView-Swift', '~> 1.1.2'
+    # 类似Twitter流量多张图片的效果
+    pod 'ImageViewer', '~> 4.0'
     
 end

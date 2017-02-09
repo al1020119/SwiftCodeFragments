@@ -30,6 +30,8 @@
 		BD4505001E37535F0066FCF0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4504FF1E37535F0066FCF0 /* SecondViewController.swift */; };
 		BD4505021E37536C0066FCF0 /* ThridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4505011E37536C0066FCF0 /* ThridViewController.swift */; };
 		BD4505041E3753770066FCF0 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4505031E3753770066FCF0 /* MoreViewController.swift */; };
+		BD8B1B241E4C5CDB00B49AFF /* ShowImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B1B231E4C5CDB00B49AFF /* ShowImagesViewController.swift */; };
+		BD8B1B271E4C647F00B49AFF /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B1B261E4C647F00B49AFF /* CounterView.swift */; };
 		BDC4834A1E44135A009D4F63 /* ApiMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC483491E44135A009D4F63 /* ApiMacros.swift */; };
 		BDC4834D1E457797009D4F63 /* WCLLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4834C1E457797009D4F63 /* WCLLoadingView.swift */; };
 		BDC483511E4577CD009D4F63 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC483501E4577CD009D4F63 /* LoadingViewController.swift */; };
@@ -120,6 +122,8 @@
 		BD4504FF1E37535F0066FCF0 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		BD4505011E37536C0066FCF0 /* ThridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThridViewController.swift; sourceTree = "<group>"; };
 		BD4505031E3753770066FCF0 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		BD8B1B231E4C5CDB00B49AFF /* ShowImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowImagesViewController.swift; sourceTree = "<group>"; };
+		BD8B1B261E4C647F00B49AFF /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		BDC483491E44135A009D4F63 /* ApiMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiMacros.swift; sourceTree = "<group>"; };
 		BDC4834C1E457797009D4F63 /* WCLLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLLoadingView.swift; sourceTree = "<group>"; };
 		BDC483501E4577CD009D4F63 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -387,9 +391,19 @@
 			path = Thrid;
 			sourceTree = "<group>";
 		};
+		BD8B1B251E4C5CE300B49AFF /* ShowImages */ = {
+			isa = PBXGroup;
+			children = (
+				BD8B1B231E4C5CDB00B49AFF /* ShowImagesViewController.swift */,
+				BD8B1B261E4C647F00B49AFF /* CounterView.swift */,
+			);
+			name = ShowImages;
+			sourceTree = "<group>";
+		};
 		BDC4834B1E456ED8009D4F63 /* AnimationResource */ = {
 			isa = PBXGroup;
 			children = (
+				BD8B1B251E4C5CE300B49AFF /* ShowImages */,
 				BDCFBFAF1E4881D7005FDEB0 /* airbnb */,
 				BDCFBEB51E45AE6E005FDEB0 /* loading2 */,
 				BDCFBEB21E45A6CE005FDEB0 /* loading */,
@@ -818,8 +832,10 @@
 				BDCFBEAE1E45A312005FDEB0 /* ImageMaskTransition.swift in Sources */,
 				BD4504F51E3750F30066FCF0 /* DHButton.swift in Sources */,
 				BDCFBF241E45B76A005FDEB0 /* Data+JCData.swift in Sources */,
+				BD8B1B271E4C647F00B49AFF /* CounterView.swift in Sources */,
 				BDCFBF841E486AC5005FDEB0 /* TransitionSecondPushViewController.swift in Sources */,
 				BDCFBF2C1E45B78C005FDEB0 /* NSNumber+JCNumber.swift in Sources */,
+				BD8B1B241E4C5CDB00B49AFF /* ShowImagesViewController.swift in Sources */,
 				BDCFBF6A1E45B7D1005FDEB0 /* UIWebView+JCWebView.swift in Sources */,
 				BDCFBF681E45B7D1005FDEB0 /* UITextView+JCTextView.swift in Sources */,
 				BDCFBF2A1E45B784005FDEB0 /* NSMutableAttributedString+JCAttributedString.swift in Sources */,

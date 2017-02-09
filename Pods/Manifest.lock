@@ -2,20 +2,23 @@ PODS:
   - Alamofire (4.3.0)
   - CryptoSwift (0.6.7)
   - GDPerformanceView-Swift (1.1.2)
+  - ImageViewer (4.0)
   - lottie-ios (1.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3.0)
   - CryptoSwift
   - GDPerformanceView-Swift (~> 1.1.2)
+  - ImageViewer (~> 4.0)
   - lottie-ios
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   CryptoSwift: 685ae257941e5447474348a2b545583e1a16b573
   GDPerformanceView-Swift: 18086952416fa8af2df0e7bc8cfdda63afc7e0b6
+  ImageViewer: 364abc0309c33dda86d08ca25b0243e5c67d8cd3
   lottie-ios: c40d67c1481d6fb9fa24fe46731ac823f5f6675b
 
-PODFILE CHECKSUM: 27e000d249c4eddac263fa03d0c78473fbd63ef5
+PODFILE CHECKSUM: 73b90a078fa70bdbff49d1911124a98695674fe0
 
 COCOAPODS: 1.1.1
