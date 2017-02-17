@@ -32,6 +32,7 @@
 		BD4505041E3753770066FCF0 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4505031E3753770066FCF0 /* MoreViewController.swift */; };
 		BD8B1B241E4C5CDB00B49AFF /* ShowImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B1B231E4C5CDB00B49AFF /* ShowImagesViewController.swift */; };
 		BD8B1B271E4C647F00B49AFF /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B1B261E4C647F00B49AFF /* CounterView.swift */; };
+		BDBD37081E56AF8D009B2BE2 /* SendCodeRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBD37071E56AF8D009B2BE2 /* SendCodeRequestManager.swift */; };
 		BDC4834A1E44135A009D4F63 /* ApiMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC483491E44135A009D4F63 /* ApiMacros.swift */; };
 		BDC4834D1E457797009D4F63 /* WCLLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4834C1E457797009D4F63 /* WCLLoadingView.swift */; };
 		BDC483511E4577CD009D4F63 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC483501E4577CD009D4F63 /* LoadingViewController.swift */; };
@@ -124,6 +125,7 @@
 		BD4505031E3753770066FCF0 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		BD8B1B231E4C5CDB00B49AFF /* ShowImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowImagesViewController.swift; sourceTree = "<group>"; };
 		BD8B1B261E4C647F00B49AFF /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		BDBD37071E56AF8D009B2BE2 /* SendCodeRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendCodeRequestManager.swift; sourceTree = "<group>"; };
 		BDC483491E44135A009D4F63 /* ApiMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiMacros.swift; sourceTree = "<group>"; };
 		BDC4834C1E457797009D4F63 /* WCLLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLLoadingView.swift; sourceTree = "<group>"; };
 		BDC483501E4577CD009D4F63 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 			children = (
 				BD4504E01E3750E80066FCF0 /* BaseRequestManager.swift */,
 				BD4504E11E3750E80066FCF0 /* JokeRequestManager.swift */,
+				BDBD37071E56AF8D009B2BE2 /* SendCodeRequestManager.swift */,
 			);
 			path = RequestManager;
 			sourceTree = "<group>";
@@ -788,6 +791,7 @@
 				BD4504CF1E374B730066FCF0 /* MRPullToRefreshLoadMore.swift in Sources */,
 				BD4505021E37536C0066FCF0 /* ThridViewController.swift in Sources */,
 				BD4504DE1E3750DF0066FCF0 /* SizeMacros.swift in Sources */,
+				BDBD37081E56AF8D009B2BE2 /* SendCodeRequestManager.swift in Sources */,
 				BD4504B41E372C760066FCF0 /* AppDelegate.swift in Sources */,
 				BDCFBF5D1E45B7D1005FDEB0 /* UIDevice+JCDevice.swift in Sources */,
 				BD4504DF1E3750DF0066FCF0 /* UtilMacros.swift in Sources */,
