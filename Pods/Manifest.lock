@@ -1,4 +1,19 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - Alamofire (4.3.0)
   - CryptoSwift (0.6.7)
   - GDPerformanceView-Swift (1.1.2)
@@ -6,6 +21,7 @@ PODS:
   - lottie-ios (1.0.0)
 
 DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
   - Alamofire (~> 4.3.0)
   - CryptoSwift
   - GDPerformanceView-Swift (~> 1.1.2)
@@ -13,12 +29,13 @@ DEPENDENCIES:
   - lottie-ios
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   CryptoSwift: 685ae257941e5447474348a2b545583e1a16b573
   GDPerformanceView-Swift: 18086952416fa8af2df0e7bc8cfdda63afc7e0b6
   ImageViewer: 364abc0309c33dda86d08ca25b0243e5c67d8cd3
   lottie-ios: c40d67c1481d6fb9fa24fe46731ac823f5f6675b
 
-PODFILE CHECKSUM: 73b90a078fa70bdbff49d1911124a98695674fe0
+PODFILE CHECKSUM: 3a2760b1a73324bafdb970ac5ee83afc46feb4c4
 
 COCOAPODS: 1.1.1
