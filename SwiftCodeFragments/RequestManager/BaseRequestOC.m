@@ -81,6 +81,9 @@ instance_implementation(BaseRequestOC, defaultManager)
     
     [[self.sessionManager requestSerializer] setValue:userAgent forHTTPHeaderField:@"User-Agent"];
     [[self.sessionManager requestSerializer] setValue:lang forHTTPHeaderField:@"X-Client-Lang"];
+    [[self.sessionManager requestSerializer] setValue:@"text/html;charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
+    // AF是默认不支持 text/html的，需要添加这句
+    self.sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
 }
 
 /**

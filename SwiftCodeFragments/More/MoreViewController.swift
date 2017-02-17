@@ -35,7 +35,7 @@ class MoreViewController: BaseViewController {
     }
     
     func reqestContent() -> Void {
-        SendCodeRequestManager.sendeCode2RequestAction(phone: self.textField.text!) { (isSuccessed, code, result) in
+        SendCodeRequestManager.sendeCode5RequestAction(phone: self.textField.text!) { (isSuccessed, code, result) in
             if isSuccessed {
                 if let result = result {
                     print("结果===",result)

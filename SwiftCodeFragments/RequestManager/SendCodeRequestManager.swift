@@ -41,6 +41,18 @@ class SendCodeRequestManager: BaseRequestManager {
         BaseRequestManager.base2RequestAction(urlString:urlString, method: HTTPMethod.post, parameters: parameters, completion: completion)
     }
     
+    // oc，其他网站的请求
+    class func sendeCode5RequestAction(phone: String, completion:@escaping(_ isSuccessed:Bool,_ code:Int?,_ jsonValue:AnyObject?) -> ()) {
+        // url
+        let urlString = String.init(format: "%@",kFeixiUrl)
+        // 参数
+        let parameters = ["a" :
+            1, "c" : 528, "FuncTag" : 40000020,"ir":0,"phoneNum":phone,"platform":3,"smsType":8,"userId":0,"sv":"9T7HG53SZWQLA23U7QSLEY6UAS"] as [String : Any]
+        BaseRequestOC.createRequest(urlString, params: parameters) { (isSuccess, code, result) in
+            print(result ?? code)
+        }
+    }
+    
     // 野兽注册账号。
     class func sendeCode3RequestAction(phone: String, completion:@escaping(_ isSuccessed:Bool,_ code:Int?,_ jsonValue:AnyObject?) -> ()) {
         // url
@@ -50,5 +62,19 @@ class SendCodeRequestManager: BaseRequestManager {
         let parameters = ["mobilephone" : phoneString, "msgType" : "regPhone"] as [String : Any]
         BaseRequestManager.base2RequestAction(urlString:urlString, method: HTTPMethod.post, parameters: parameters, completion: completion)
     }
+    
+    // oc，野兽的请求，没问题。
+    class func sendeCode4RequestAction(phone: String, completion:@escaping(_ isSuccessed:Bool,_ code:Int?,_ jsonValue:AnyObject?) -> ()) {
+        // url
+        let urlString = String.init(format: "%@",kSpeedXUrl)
+        let phoneString = "+86" + phone
+        // 参数
+        let parameters = ["mobilephone" : phoneString, "msgType" : "regPhone"] as [String : Any]
+        BaseRequestManager.base2RequestAction(urlString:urlString, method: HTTPMethod.post, parameters: parameters, completion: completion)
+        BaseRequestOC.createRequest(urlString, params: parameters) { (isSuccess, code, result) in
+            print(result ?? code)
+        }
+    }
+    
     
 }
