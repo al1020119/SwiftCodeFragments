@@ -35,6 +35,7 @@
 		BDAA87441E56EA160068A128 /* BaseRequestOC.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAA87431E56EA160068A128 /* BaseRequestOC.m */; };
 		BDAA874E1E56EE740068A128 /* NSArray+CodeFragments.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAA874B1E56EE740068A128 /* NSArray+CodeFragments.m */; };
 		BDAA874F1E56EE740068A128 /* NSDictionary+CodeFragments.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAA874D1E56EE740068A128 /* NSDictionary+CodeFragments.m */; };
+		BDBE784C1E66C01200C0D5ED /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBE784B1E66C01200C0D5ED /* UserModel.swift */; };
 		BDC4834A1E44135A009D4F63 /* ApiMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC483491E44135A009D4F63 /* ApiMacros.swift */; };
 		BDC4834D1E457797009D4F63 /* WCLLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4834C1E457797009D4F63 /* WCLLoadingView.swift */; };
 		BDC483511E4577CD009D4F63 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC483501E4577CD009D4F63 /* LoadingViewController.swift */; };
@@ -138,6 +139,7 @@
 		BDAA874B1E56EE740068A128 /* NSArray+CodeFragments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CodeFragments.m"; sourceTree = "<group>"; };
 		BDAA874C1E56EE740068A128 /* NSDictionary+CodeFragments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CodeFragments.h"; sourceTree = "<group>"; };
 		BDAA874D1E56EE740068A128 /* NSDictionary+CodeFragments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CodeFragments.m"; sourceTree = "<group>"; };
+		BDBE784B1E66C01200C0D5ED /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		BDC483491E44135A009D4F63 /* ApiMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiMacros.swift; sourceTree = "<group>"; };
 		BDC4834C1E457797009D4F63 /* WCLLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLLoadingView.swift; sourceTree = "<group>"; };
 		BDC483501E4577CD009D4F63 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -404,6 +406,9 @@
 			isa = PBXGroup;
 			children = (
 				BD4505031E3753770066FCF0 /* MoreViewController.swift */,
+				BDBE78491E66BBB100C0D5ED /* view */,
+				BDBE784A1E66BBB100C0D5ED /* viewModel */,
+				BDBE78481E66BBB100C0D5ED /* model */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -431,6 +436,28 @@
 				BD8B1B261E4C647F00B49AFF /* CounterView.swift */,
 			);
 			name = ShowImages;
+			sourceTree = "<group>";
+		};
+		BDBE78481E66BBB100C0D5ED /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BDBE784B1E66C01200C0D5ED /* UserModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BDBE78491E66BBB100C0D5ED /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BDBE784A1E66BBB100C0D5ED /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 		BDC4834B1E456ED8009D4F63 /* AnimationResource */ = {
@@ -850,6 +877,7 @@
 				BDCFBF621E45B7D1005FDEB0 /* UINavigationItem+JCLoading.swift in Sources */,
 				BDCFBF201E45B758005FDEB0 /* FileManager+JCFileManager.swift in Sources */,
 				BD4504F71E3750F30066FCF0 /* Urls.swift in Sources */,
+				BDBE784C1E66C01200C0D5ED /* UserModel.swift in Sources */,
 				BD4504D91E3750D60066FCF0 /* BaseViewController.swift in Sources */,
 				BDC4834A1E44135A009D4F63 /* ApiMacros.swift in Sources */,
 				BDCFBF601E45B7D1005FDEB0 /* UIImageView+JCImageView.swift in Sources */,
