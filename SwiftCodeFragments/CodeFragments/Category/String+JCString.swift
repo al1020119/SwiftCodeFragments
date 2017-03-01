@@ -169,7 +169,7 @@ extension String {
     static func stringWithUUID() -> String {
         let uuid = CFUUIDCreate(nil);
         let str = CFUUIDCreateString(nil, uuid);
-        return str as! String;
+        return str! as String;
     }
     
     /// 判断是否是为整数
