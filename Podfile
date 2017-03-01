@@ -15,10 +15,12 @@ target 'SwiftCodeFragments' do
     pod 'CryptoSwift'
  # airbnb动画
     pod 'lottie-ios'
-    
     # 实时检查FPS/CPU的工具 - 新版xcode报错
 #    pod 'GDPerformanceView-Swift', '~> 1.1.2'
     # 类似Twitter流量多张图片的效果
     pod 'ImageViewer', '~> 4.0'
     
+    pod 'ReactiveCocoa', '~> 5.0.0'
+#    pod 'ReactiveCocoa', '5.0.0-rc.1'
+
 end

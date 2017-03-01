@@ -9,8 +9,12 @@
 #import "BaseRequestOC.h"
 
 #import "SwiftCodeFragments-Swift.h" // OC中想调用swift文件
+#import "SwiftCodeFragments-Bridging-Header.h"
 #import "NSArray+CodeFragments.h"
 #import "NSDictionary+CodeFragments.h"
+
+#include <sys/types.h>
+#include <sys/sysctl.h>
 
 @implementation BaseRequestOC
 

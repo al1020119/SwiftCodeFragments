@@ -17,7 +17,12 @@ PODS:
   - Alamofire (4.3.0)
   - CryptoSwift (0.6.7)
   - ImageViewer (4.0)
-  - lottie-ios (1.0.0)
+  - lottie-ios (1.5.0)
+  - ReactiveCocoa (5.0.0):
+    - ReactiveSwift (~> 1.0.0)
+  - ReactiveSwift (1.0.1):
+    - Result (~> 3.1)
+  - Result (3.2.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -25,14 +30,18 @@ DEPENDENCIES:
   - CryptoSwift
   - ImageViewer (~> 4.0)
   - lottie-ios
+  - ReactiveCocoa (~> 5.0.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   CryptoSwift: 685ae257941e5447474348a2b545583e1a16b573
   ImageViewer: 364abc0309c33dda86d08ca25b0243e5c67d8cd3
-  lottie-ios: c40d67c1481d6fb9fa24fe46731ac823f5f6675b
+  lottie-ios: 8b959bce82f84e42d832d605f5bab9d9edba8ad2
+  ReactiveCocoa: 60ef0da915b4f70c34ebecc3f4fb8f96af0e53d6
+  ReactiveSwift: b1453c8885ebfb9b09b6d60bc5bc3303f56dc72c
+  Result: 5a6705171c0613cc5fbf6ec55ff520cc62a8e81d
 
-PODFILE CHECKSUM: 56cd608c9eeca3c0c2efbac964c38f25053d9924
+PODFILE CHECKSUM: 964797fb638838405790e051d03a53648a31b4f7
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0

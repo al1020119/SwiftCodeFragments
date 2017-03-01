@@ -7,3 +7,4 @@
 
 #import "NSArray+CodeFragments.h"
 #import "NSDictionary+CodeFragments.h"
+#import <Lottie/LOTAnimationView.h>

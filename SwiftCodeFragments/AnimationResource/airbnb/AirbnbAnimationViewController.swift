@@ -11,7 +11,8 @@ import Lottie
 
 class AirbnbAnimationViewController: BaseViewController {
 
-    var animationView: LAAnimationView!
+    var animationView: LOTAnimationView!
+    
     var i = 0
     var name = "PinJump.json"
     var arr = ["PinJump.json","9squares-AlBoardman.json","HamburgerArrow.json","IconTransitions.json","LottieLogo1.json","LottieLogo1_masked.json","LottieLogo2.json","MotionCorpse-Jrcanest.json","TwitterHeart.json","vcTransition1.json","vcTransition2.json","Watermelon.json",]
@@ -22,7 +23,7 @@ class AirbnbAnimationViewController: BaseViewController {
 //        LAAnimationView *animation = [[LAAnimationView alloc] initWithContentsOfURL:[NSURL URLWithString:URL]];
 
         
-        animationView = LAAnimationView.animationNamed(name)
+        animationView = LOTAnimationView.animationNamed(name)
         self.view.addSubview(animationView!)
         
         animationView?.play(completion: { (finished) in
@@ -42,7 +43,7 @@ class AirbnbAnimationViewController: BaseViewController {
         name = arr[i]
         
         animationView.removeFromSuperview()
-        animationView = LAAnimationView.animationNamed(name)
+        animationView = LOTAnimationView.animationNamed(name)
         self.view.addSubview(animationView!)
         
         animationView?.play(completion: { (finished) in

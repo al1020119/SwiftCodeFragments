@@ -94,6 +94,10 @@
 		BDCFBFC71E4881D7005FDEB0 /* vcTransition1.json in Resources */ = {isa = PBXBuildFile; fileRef = BDCFBFBA1E4881D7005FDEB0 /* vcTransition1.json */; };
 		BDCFBFC81E4881D7005FDEB0 /* vcTransition2.json in Resources */ = {isa = PBXBuildFile; fileRef = BDCFBFBB1E4881D7005FDEB0 /* vcTransition2.json */; };
 		BDCFBFC91E4881D7005FDEB0 /* Watermelon.json in Resources */ = {isa = PBXBuildFile; fileRef = BDCFBFBC1E4881D7005FDEB0 /* Watermelon.json */; };
+		BDDCAAD41E66B4A80052649A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDCAAD31E66B4A80052649A /* Alamofire.framework */; };
+		BDDCAAD61E66B4AD0052649A /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDCAAD51E66B4AD0052649A /* ReactiveSwift.framework */; };
+		BDDCAAD81E66B4B00052649A /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDCAAD71E66B4B00052649A /* ReactiveCocoa.framework */; };
+		BDDCAADA1E66B4B40052649A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDCAAD91E66B4B40052649A /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -194,6 +198,10 @@
 		BDCFBFBB1E4881D7005FDEB0 /* vcTransition2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition2.json; sourceTree = "<group>"; };
 		BDCFBFBC1E4881D7005FDEB0 /* Watermelon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Watermelon.json; sourceTree = "<group>"; };
 		BDCFBFCA1E4AB837005FDEB0 /* SwiftCodeFragments-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftCodeFragments-Bridging-Header.h"; sourceTree = "<group>"; };
+		BDDCAAD31E66B4A80052649A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/SwiftCodeFragments-divvdpcpyouwqpbapibvemkhehfn/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		BDDCAAD51E66B4AD0052649A /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/SwiftCodeFragments-divvdpcpyouwqpbapibvemkhehfn/Build/Products/Debug-iphoneos/ReactiveSwift/ReactiveSwift.framework"; sourceTree = "<group>"; };
+		BDDCAAD71E66B4B00052649A /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "../../Library/Developer/Xcode/DerivedData/SwiftCodeFragments-divvdpcpyouwqpbapibvemkhehfn/Build/Products/Debug-iphoneos/ReactiveCocoa/ReactiveCocoa.framework"; sourceTree = "<group>"; };
+		BDDCAAD91E66B4B40052649A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../Library/Developer/Xcode/DerivedData/SwiftCodeFragments-divvdpcpyouwqpbapibvemkhehfn/Build/Products/Debug-iphoneos/Result/Result.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +209,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDDCAADA1E66B4B40052649A /* Result.framework in Frameworks */,
+				BDDCAAD81E66B4B00052649A /* ReactiveCocoa.framework in Frameworks */,
+				BDDCAAD61E66B4AD0052649A /* ReactiveSwift.framework in Frameworks */,
+				BDDCAAD41E66B4A80052649A /* Alamofire.framework in Frameworks */,
 				0069FD2F87D7BB4508D39BD1 /* Pods_SwiftCodeFragments.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +232,10 @@
 		719C4C69157FCBF5048B8F9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BDDCAAD91E66B4B40052649A /* Result.framework */,
+				BDDCAAD71E66B4B00052649A /* ReactiveCocoa.framework */,
+				BDDCAAD51E66B4AD0052649A /* ReactiveSwift.framework */,
+				BDDCAAD31E66B4A80052649A /* Alamofire.framework */,
 				27CA7C5602B0ED5DD00F5F4F /* Pods_SwiftCodeFragments.framework */,
 			);
 			name = Frameworks;
@@ -909,7 +925,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -952,7 +968,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -964,7 +980,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5DD52B258095640E6FF4EF39 /* Pods-SwiftCodeFragments.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 72D439SU53;
@@ -982,7 +998,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6919F4BA5AA827CBFEBE975D /* Pods-SwiftCodeFragments.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 72D439SU53;

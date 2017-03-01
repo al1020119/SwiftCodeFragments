@@ -12,7 +12,10 @@ class MoreViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.title = "登录-MVVM"
 
+        
     }
 
 }
