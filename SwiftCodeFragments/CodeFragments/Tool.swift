@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CryptoSwift      // md5加密
 
 public class Tool {
     
@@ -99,4 +100,15 @@ public class Tool {
         }
         return strJson
     }
+    
+    /// 加密算法
+    public class func md5Action(origin: String!, _ salt: String?) -> String! {
+        var str : String! = origin
+        if let salt = salt {
+            str = origin + salt
+        }
+        let resultString = str.md5()
+        return resultString
+    }
+
 }

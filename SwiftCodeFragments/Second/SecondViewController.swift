@@ -14,6 +14,7 @@ class SecondViewController: BaseViewController,UITableViewDelegate,UITableViewDa
     var dataArray = ["loading动画和转场动画","启动页面的动画","加载动画2","present的转场动画","push的转场动画","airbnb动画","类似Twitter流量多张图效果"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "动画列表"
         // 初始化表格
         self.initTableView()
         JCLog("测试log")
