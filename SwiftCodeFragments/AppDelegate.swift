@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import GDPerformanceView_Swift
+//import GDPerformanceView_Swift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.makeKeyAndVisible()
         
-        GDPerformanceMonitor.sharedInstance.startMonitoring()
+//        GDPerformanceMonitor.sharedInstance.startMonitoring()
         
         return true
     }
