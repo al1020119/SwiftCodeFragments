@@ -42,23 +42,9 @@ class SecondViewController: BaseViewController,UITableViewDelegate,UITableViewDa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        var vc : UIViewController!
-        if indexPath.row == 0 {
-            vc = LoadingViewController()
-        } else if indexPath.row == 1 {
-            vc = LaunchViewController()
-        } else if indexPath.row == 2 {
-            vc = Loading2ViewController()
-        } else if indexPath.row == 3 {
-            vc = TransitionFristViewController()
-        } else if indexPath.row == 4 {
-            vc = TransitionFirstPushViewController()
-        } else if indexPath.row == 5 {
-            vc = AirbnbAnimationViewController()
-        } else if indexPath.row == 6 {
-            vc = ShowImagesViewController()
-        }
+        let vcList = [LoadingViewController(),LaunchViewController(),Loading2ViewController(),TransitionFristViewController(),TransitionFirstPushViewController(),AirbnbAnimationViewController(),ShowImagesViewController()]
         
+        let vc = vcList[indexPath.row]
         vc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(vc, animated: true)
     }
