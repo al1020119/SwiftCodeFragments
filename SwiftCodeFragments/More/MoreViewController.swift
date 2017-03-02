@@ -49,19 +49,35 @@ class MoreViewController: BaseViewController {
         self.view.addSubview(loginButton)
         loginButton.center = self.view.center
         // combineLatest 是需要里面的每个signal 都执行了至少一次才可以。
-        Signal.combineLatest(nameTextField.reactive.continuousTextValues,pwdTextField.reactive.continuousTextValues).map({ (name, pwd) -> Bool in
-            if (name?.length)! >= 6 && (name?.length)! <= 16 && (pwd?.length)! >= 6 && (pwd?.length)! <= 16 {
+//        Signal.combineLatest(nameTextField.reactive.continuousTextValues,pwdTextField.reactive.continuousTextValues).map({ (name, pwd) -> Bool in
+//            if (name?.length)! >= 6 && (name?.length)! <= 16 && (pwd?.length)! >= 6 && (pwd?.length)! <= 16 {
+//                self.loginButton.backgroundColor = UIColor.blue
+//                return true
+//            } else {
+//                self.loginButton.backgroundColor = UIColor.black
+//                return false
+//            }
+//            
+//        }).observeValues { (isSuccess) in
+//            print("是否成功了===\(isSuccess)")
+//        }
+
+        // merge 只要里面有一个signal执行了，就可以有回调了。
+        let signalName = nameTextField.reactive.continuousTextValues
+        let signalPwd = pwdTextField.reactive.continuousTextValues
+        let signalTwo = Signal.merge(signalName,signalPwd)
+        
+        signalTwo.map({ (str) -> Bool in
+            if (self.nameTextField.text?.length)! >= 6 && (self.nameTextField.text?.length)! <= 16 && (self.pwdTextField.text?.length)! >= 6 && (self.pwdTextField.text?.length)! <= 16 {
                 self.loginButton.backgroundColor = UIColor.blue
                 return true
             } else {
                 self.loginButton.backgroundColor = UIColor.black
                 return false
             }
-            
         }).observeValues { (isSuccess) in
             print("是否成功了===\(isSuccess)")
         }
-        
         
     }
     
